@@ -8,6 +8,26 @@ body{
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
-    opacity: 1.9;
+    /* opacity: 1.9; */
 }
-/* /Users/hitansh/Documents/Resume/backg1.jpeg */
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+}
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px,8px,8px,0px;
+}
+.horizontal-list li a{
+    color: white;
+    text-decoration:none;
+    font-size: 30px;
+    transition: color 0.5s ,border-bottom 4s;
+}
+.horizontal-list li a:hover{
+    color: aquamarine;
+    text-decoration: 3px underline;
+}
+.text-center{
+    text-align: center;
+}
