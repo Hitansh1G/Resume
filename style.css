@@ -13,16 +13,19 @@ body{
 .horizontal-list{
     list-style: none;
     padding-left: 0px;
+    margin: 0px;
+    /* padding: 5px; */
 }
 .horizontal-list li{
     display: inline-block;
     margin: 0px,8px,8px,0px;
 }
 .horizontal-list li a{
-    color: white;
+    color: wheat;
     text-decoration:none;
     font-size: 30px;
     transition: color 0.5s ,border-bottom 4s;
+    letter-spacing: 0.1rem;
 }
 .horizontal-list li a:hover{
     color: aquamarine;
@@ -30,4 +33,22 @@ body{
 }
 .text-center{
     text-align: center;
+}
+#name-social-container{
+    margin-top: 30vh;
+}
+#my-name{
+    font-size: 4em;
+    letter-spacing: 0.1rem;
+    color: wheat;
+    font-weight: 1000;
+    margin-bottom: 0.5rem;
+}
+.social-icons li a i{
+    padding-left: 10px;
+    border-radius: 50%;
+    font-size: 3rem;
+}
+.social-icons li a i:hover{
+    box-shadow:0px,0px,6px,4px,red ;
 }
