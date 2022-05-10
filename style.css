@@ -10,8 +10,9 @@ body {
 
 #body-header {
     height: 65vh;
-    opacity: 0.8;
-    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    width: 200vh;
+    /* opacity: 0.8; */
+    background-image: url(bckg2.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -126,12 +127,12 @@ section:nth-child(2n + 1) {
     height: 12rem;
     width: 12rem;
     margin: auto;
-    margin-top: -17vh;
+    margin-top: -19vh;
 }
 
 #my-image img {
-    height: 100%;
-    width: 100%;
+    height: 25vh;
+    width: 30vh;
     border-radius: 50%;
     border: 3px solid white;
     box-shadow: 1px 1px 10px 2px lightgrey;
