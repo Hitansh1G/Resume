@@ -1,27 +1,24 @@
-/* html {
-  background-color: #252525;
-  scroll-behavior: smooth;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-} */
 body {
   margin: 0px;
   font-family: sans-serif;
   font-size: 30px;
-  /* background-color: #252525; */
 }
+
+
 
 /* Body Header */
 
 #body-header {
   height: 65vh;
-  width: 200vh;
-  /* opacity: 0.8; */
-  background-image: url(bckg2.jpeg);
+  opacity: 0.8;
+  background-image: url(XZDsP.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   padding-top: 1.2rem;
 }
+
+
 
 /* Horizontal Lists */
 
@@ -56,6 +53,8 @@ body {
   text-align: center;
 }
 
+
+
 /* Name and Social Icons*/
 
 #name-social-container {
@@ -80,6 +79,8 @@ body {
   box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
 
+
+
 /*Section Classes*/
 
 section {
@@ -94,9 +95,6 @@ section:nth-child(2n) {
 
 section:nth-child(2n + 1) {
   background-color: white;
-}
-section:target {
-  background-image: linear-gradient(cyan, rgba(0, 255, 255, 0.471));
 }
 
 .section-heading {
@@ -113,6 +111,8 @@ section:target {
   margin-right: 0.5rem;
 }
 
+
+
 /*About Section*/
 
 #about {
@@ -123,15 +123,15 @@ section:target {
 }
 
 #my-image {
-  height: 12rem;
-  width: 12rem;
+  height: 15rem;
+  width: 17.5rem;
   margin: auto;
-  margin-top: -19vh;
+  margin-top: -17vh;
 }
 
 #my-image img {
-  height: 25vh;
-  width: 30vh;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
   border: 3px solid white;
   box-shadow: 1px 1px 10px 2px lightgrey;
@@ -146,6 +146,8 @@ section:target {
   font-size: 1.1rem;
   margin: auto;
 }
+
+
 
 /*Skills Section*/
 
@@ -180,6 +182,8 @@ section:target {
   vertical-align: middle;
 }
 
+
+
 /* Work Experience */
 
 .timeline {
@@ -199,7 +203,7 @@ section:target {
 }
 
 .timeline-box::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 15px;
   height: 15px;
@@ -213,7 +217,7 @@ section:target {
   left: 53%;
 }
 
-.timeline-box:nth-child(2n + 1)::after {
+.timeline-box:nth-child(2n+1)::after {
   right: -11.8%;
 }
 
@@ -228,7 +232,7 @@ section:target {
   left: 50%;
   border: 2px dashed #0096fa6b;
   height: 75%;
-  color: #433e3f;
+  color: #433E3F;
 }
 
 #timeline-divider .timeline-traveller {
@@ -243,6 +247,8 @@ section:target {
   display: block;
   color: #2857a4;
 }
+
+
 
 /* Portfolio Section */
 
@@ -281,13 +287,15 @@ section:target {
 }
 
 .portfolio-image-container:hover {
-  box-shadow: 0 0 20px #74adc8;
+  box-shadow: 0 0 20px #74ADC8;
 }
 
 .portfolio-image-container:hover .portfolio-details {
   background-color: #80808078;
   color: white;
 }
+
+
 
 /* Contact Form */
 
@@ -352,6 +360,7 @@ section:target {
   margin-right: 0.5rem;
 }
 
+
 #contact-form input,
 textarea {
   max-width: 90%;
@@ -391,6 +400,7 @@ textarea {
   font-size: 1.2rem;
   margin: 40px 10px 10px;
   padding: 10px 14px 20px 10px;
+
 }
 
 input:focus,
@@ -399,6 +409,8 @@ textarea:focus,
 button:focus {
   outline: none;
 }
+
+
 
 /* Common Margin Classes */
 
@@ -410,12 +422,17 @@ button:focus {
   margin-bottom: 50px;
 }
 
+
+
 /*common color classes */
 
 .text-highlight {
   color: #2857a4;
   font-weight: 600;
+
 }
+
+
 
 /* setting background-color */
 
@@ -434,6 +451,8 @@ button:focus {
 .mb-light-purple {
   background-color: #93738c;
 }
+
+
 
 /*Percentage Classes */
 
