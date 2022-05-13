@@ -4,6 +4,9 @@ body {
   font-size: 30px;
 }
 
+body::-webkit-scrollbar { 
+  display: none; 
+}
 
 
 /* Body Header */
@@ -11,7 +14,7 @@ body {
 #body-header {
   height: 65vh;
   opacity: 0.8;
-  background-image: url(XZDsP.jpg);
+  background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -22,8 +25,56 @@ body {
 
 /* Horizontal Lists */
 
-.horizontal-list {
+.bars{
+  color: white;
+  margin: 0;
+  margin-right: 5%;
+  display: none;
+}
+
+.bars i {
+  font-size: 2rem;
+}
+
+.dropdown-list{
+  margin: 0;
+  display: none;
+  background-color: #828470;
+  box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.dropdown-list ul{
+  margin: 0.2rem 0.2rem;
+  text-align: left;
+  padding: 0px 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list{
+  display: block;
+  position: absolute;
+  right: 3%;
+}
+
+.dropdown-list li{
+  margin: 0.4rem 0px;
+}
+
+.no-list-style{
   list-style: none;
+}
+
+.no-list-style li {
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+.no-list-style li a{
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+.horizontal-list {
   padding-left: 0px;
   margin: 0px;
 }
@@ -31,14 +82,8 @@ body {
 .horizontal-list li {
   display: inline-block;
   margin: 0px 8px 8px 0px;
-  font-weight: 100;
-  font-size: 0.9rem;
 }
 
-.horizontal-list li a {
-  color: white;
-  text-decoration: none;
-}
 
 .nav-menu li a {
   transition: color 0.5s, border-bottom 4s;
@@ -48,11 +93,6 @@ body {
   color: lightgrey;
   border-bottom: 1px solid black;
 }
-
-.text-center {
-  text-align: center;
-}
-
 
 
 /* Name and Social Icons*/
@@ -87,6 +127,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 section:nth-child(2n) {
@@ -123,8 +164,8 @@ section:nth-child(2n + 1) {
 }
 
 #my-image {
-  height: 15rem;
-  width: 17.5rem;
+  height: 12rem;
+  width: 12rem;
   margin: auto;
   margin-top: -17vh;
 }
@@ -189,7 +230,6 @@ section:nth-child(2n + 1) {
 .timeline {
   position: relative;
   width: 75%;
-  border: 2px solid black;
 }
 
 .timeline-box {
@@ -199,7 +239,6 @@ section:nth-child(2n + 1) {
   position: relative;
   left: 5%;
   text-align: right;
-  border: 2px solid black;
 }
 
 .timeline-box::after {
@@ -225,13 +264,27 @@ section:nth-child(2n + 1) {
   left: -9%;
 }
 
+.timeline-container {
+  padding: 8px;
+}
+
+.timeline-logo {
+  position: absolute;
+  width: 50px;
+  overflow: hidden;
+}
+
+.timeline-logo > img {
+  width: 100%;
+}
+
 #timeline-divider {
   position: absolute;
   width: 0;
-  top: 8%;
+  top: 10%;
   left: 50%;
-  border: 2px dashed #0096fa6b;
-  height: 75%;
+  border: 1px dashed #0096fa6b;
+  height: 66%;
   color: #433E3F;
 }
 
@@ -247,6 +300,34 @@ section:nth-child(2n + 1) {
   display: block;
   color: #2857a4;
 }
+
+.experience-designation {
+  font-size: 1.4rem;
+}
+
+.experience-company-name {
+  margin: 5px 0 0;
+  color: #eb822d;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.experience-duration {
+  color: #9e9b9b;
+  font-weight: 100;
+  color: grey;
+  font-size: 1rem;
+}
+
+.experience-description {
+  font-size: 14px;
+  padding: 2px;
+  color: grey;
+  line-height: 20px;
+}
+
+
+
 
 
 
@@ -264,7 +345,7 @@ section:nth-child(2n + 1) {
 .portfolio-image-container {
   max-width: 300px;
   overflow: hidden;
-  margin: 10px;
+  margin: 30px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -410,9 +491,25 @@ button:focus {
   outline: none;
 }
 
+/* Common Text Align Classes */
 
+.text-right{
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
 
 /* Common Margin Classes */
+
+.m0 {
+  margin: 0;
+}
 
 .mb75px {
   margin-bottom: 75px;
@@ -433,8 +530,11 @@ button:focus {
 }
 
 
-
 /* setting background-color */
+
+.m-blue {
+  color: #2857a4;
+}
 
 .mb-blue {
   background-color: #2857a4;
@@ -470,6 +570,25 @@ button:focus {
   height: inherit;
   width: 50%;
 }
+
+
+@media only screen and (max-width: 572px) {
+  
+  .timeline-box {
+      width: 100%;
+      left: 10% !important;
+  }
+
+  .bars {
+      display: block;
+  }
+  
+  
+  .nav-menu {
+      display: none;
+  } 
+}
+
 
 
 @media only screen and (max-width: 768px) {
