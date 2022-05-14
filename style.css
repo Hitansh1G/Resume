@@ -4,10 +4,9 @@ body {
   font-size: 30px;
 }
 
-body::-webkit-scrollbar { 
-  display: none; 
+body::-webkit-scrollbar {
+  display: none;
 }
-
 
 /* Body Header */
 
@@ -21,11 +20,9 @@ body::-webkit-scrollbar {
   padding-top: 1.2rem;
 }
 
-
-
 /* Horizontal Lists */
 
-.bars{
+.bars {
   color: white;
   margin: 0;
   margin-right: 5%;
@@ -36,30 +33,30 @@ body::-webkit-scrollbar {
   font-size: 2rem;
 }
 
-.dropdown-list{
+.dropdown-list {
   margin: 0;
   display: none;
   background-color: #828470;
   box-shadow: 0px 4px 8px 1px #535547;
 }
 
-.dropdown-list ul{
+.dropdown-list ul {
   margin: 0.2rem 0.2rem;
   text-align: left;
   padding: 0px 0.8rem;
 }
 
-.dropdown-menu:hover .dropdown-list{
+.dropdown-menu:hover .dropdown-list {
   display: block;
   position: absolute;
   right: 3%;
 }
 
-.dropdown-list li{
+.dropdown-list li {
   margin: 0.4rem 0px;
 }
 
-.no-list-style{
+.no-list-style {
   list-style: none;
 }
 
@@ -68,7 +65,7 @@ body::-webkit-scrollbar {
   font-size: 0.9rem;
 }
 
-.no-list-style li a{
+.no-list-style li a {
   list-style: none;
   color: white;
   text-decoration: none;
@@ -84,7 +81,6 @@ body::-webkit-scrollbar {
   margin: 0px 8px 8px 0px;
 }
 
-
 .nav-menu li a {
   transition: color 0.5s, border-bottom 4s;
 }
@@ -93,7 +89,6 @@ body::-webkit-scrollbar {
   color: lightgrey;
   border-bottom: 1px solid black;
 }
-
 
 /* Name and Social Icons*/
 
@@ -118,8 +113,6 @@ body::-webkit-scrollbar {
 .social-icons li a i:hover {
   box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
-
-
 
 /*Section Classes*/
 
@@ -152,8 +145,6 @@ section:nth-child(2n + 1) {
   margin-right: 0.5rem;
 }
 
-
-
 /*About Section*/
 
 #about {
@@ -182,13 +173,11 @@ section:nth-child(2n + 1) {
   padding: 10px;
   width: 70%;
   text-align: justify;
-  color: grey;
+  color: black;
   line-height: 28px;
   font-size: 1.1rem;
   margin: auto;
 }
-
-
 
 /*Skills Section*/
 
@@ -223,8 +212,6 @@ section:nth-child(2n + 1) {
   vertical-align: middle;
 }
 
-
-
 /* Work Experience */
 
 .timeline {
@@ -242,7 +229,7 @@ section:nth-child(2n + 1) {
 }
 
 .timeline-box::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 15px;
   height: 15px;
@@ -256,7 +243,7 @@ section:nth-child(2n + 1) {
   left: 53%;
 }
 
-.timeline-box:nth-child(2n+1)::after {
+.timeline-box:nth-child(2n + 1)::after {
   right: -11.8%;
 }
 
@@ -285,7 +272,7 @@ section:nth-child(2n + 1) {
   left: 50%;
   border: 1px dashed #0096fa6b;
   height: 66%;
-  color: #433E3F;
+  color: #433e3f;
 }
 
 #timeline-divider .timeline-traveller {
@@ -326,11 +313,6 @@ section:nth-child(2n + 1) {
   line-height: 20px;
 }
 
-
-
-
-
-
 /* Portfolio Section */
 
 #portfolio-container {
@@ -368,15 +350,13 @@ section:nth-child(2n + 1) {
 }
 
 .portfolio-image-container:hover {
-  box-shadow: 0 0 20px #74ADC8;
+  box-shadow: 0 0 20px #74adc8;
 }
 
 .portfolio-image-container:hover .portfolio-details {
   background-color: #80808078;
   color: white;
 }
-
-
 
 /* Contact Form */
 
@@ -441,7 +421,6 @@ section:nth-child(2n + 1) {
   margin-right: 0.5rem;
 }
 
-
 #contact-form input,
 textarea {
   max-width: 90%;
@@ -481,7 +460,6 @@ textarea {
   font-size: 1.2rem;
   margin: 40px 10px 10px;
   padding: 10px 14px 20px 10px;
-
 }
 
 input:focus,
@@ -493,7 +471,7 @@ button:focus {
 
 /* Common Text Align Classes */
 
-.text-right{
+.text-right {
   text-align: right;
 }
 
@@ -519,16 +497,12 @@ button:focus {
   margin-bottom: 50px;
 }
 
-
-
 /*common color classes */
 
 .text-highlight {
   color: #2857a4;
   font-weight: 600;
-
 }
-
 
 /* setting background-color */
 
@@ -552,8 +526,6 @@ button:focus {
   background-color: #93738c;
 }
 
-
-
 /*Percentage Classes */
 
 .eighty-five-percent {
@@ -571,59 +543,51 @@ button:focus {
   width: 50%;
 }
 
-
 @media only screen and (max-width: 572px) {
-  
   .timeline-box {
-      width: 100%;
-      left: 10% !important;
+    width: 100%;
+    left: 10% !important;
   }
 
   .bars {
-      display: block;
+    display: block;
   }
-  
-  
+
   .nav-menu {
-      display: none;
-  } 
+    display: none;
+  }
 }
 
-
-
 @media only screen and (max-width: 768px) {
-
-
   .timeline-box {
-      width: 90%;
-      left: 10% !important;
+    width: 90%;
+    left: 10% !important;
   }
 
   .timeline-box::after {
-      left: -9.3% !important;
+    left: -9.3% !important;
   }
 
   #timeline-divider {
-      top: 10%;
-      left: 2%;
+    top: 10%;
+    left: 2%;
   }
 
   #contact-form {
-      margin-left: 0%;
+    margin-left: 0%;
   }
 
   #contact-container {
-      flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   #my-details-container {
-      width: 80%;
-      margin: 10%;
+    width: 80%;
+    margin: 10%;
   }
 
   #contact-form-container {
-      width: 80%;
-      margin: 10%;
+    width: 80%;
+    margin: 10%;
   }
-
 }
